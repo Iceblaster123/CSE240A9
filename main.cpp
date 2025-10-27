@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "pet.hpp"
 #include "dog.hpp"
 #include "cat.hpp"
