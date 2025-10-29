@@ -11,10 +11,10 @@ class Pet{
     public:
         virtual ~Pet(){};
         virtual float CalculateFee() const = 0;
-        string GetName(){return this->name;};
-        void setName(string& name){this->name = name;};
-        int GetWeight(){return this->weight;};
-        void setWeight(int& weight){this->weight = weight;};
+        string GetName() const {return this->name;};
+        void SetName(const string& name) {this->name = name;};
+        int GetWeight() const {return this->weight;};
+        void SetWeight(const int& weight) {this->weight = weight;};
     protected:
         string name;
         int weight;
