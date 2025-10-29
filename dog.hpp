@@ -6,9 +6,14 @@
 
 using namespace std;
 
+/*
+This extends the abstract class Pet, all it adds is the commission rate of a Dog, which is a constant 2
+and it overrides the function CalculateFee, using the constant value
+*/
+
 class Dog : public Pet{
     public:
-        virtual float CalculateFee(){
+        virtual float CalculateFee() const override{
             return commissionRate * this->weight;
         };
         Dog(string name, int weight){

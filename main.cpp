@@ -5,7 +5,10 @@
 #include "cat.hpp"
 using namespace std;
 
-
+/*
+Basic main fuction, it makes 2 dogs and 1 cat, adds them to a vector, 
+and then reads them out using the for loop while calculating the total fee
+*/
 
 int main(){
     Pet* Bob = new Dog("Bob", 65);
